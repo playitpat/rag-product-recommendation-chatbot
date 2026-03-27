@@ -108,9 +108,11 @@ New flavor requests and innovation signals.
 ## 🛡 Data Governance & Compliance<br>
 <img width="1837" height="723" alt="Dashboard Screenshot" src="https://github.com/user-attachments/assets/0d8e18f2-426a-47db-b88b-231f7305c09b" /><br>
 Guardrails: No medical claims; uses compliant language (e.g., "may support", "can help").
+
 Privacy: No personally identifiable information (PII) is intentionally collected.
 
 Anonymization: Conversations are stored in an anonymized, structured format.
+
 ---
 ## 📈 Future Roadmap
 Channel Integration: Connection with the LINE Messaging API.
