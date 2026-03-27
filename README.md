@@ -95,8 +95,8 @@ Try asking the assistant:
 
 >"What is the best yogurt to eat after a gym session?">
 
-### Insights Dashboard Tab
-<img width="1816" height="549" alt="Assistant Screenshot" src="https://github.com/user-attachments/assets/be03ae9f-fd0d-43c4-8d9f-fe9899794454" />
+### Insights Dashboard Tab<br>
+<img width="1816" height="549" alt="Assistant Screenshot" src="https://github.com/user-attachments/assets/be03ae9f-fd0d-43c4-8d9f-fe9899794454" /><br>
 Review aggregated metrics including:
 
 - Top consumer needs and personas.
@@ -105,8 +105,8 @@ Review aggregated metrics including:
 
 New flavor requests and innovation signals.
 ---
-## 🛡 Data Governance & Compliance
-<img width="1837" height="723" alt="Dashboard Screenshot" src="https://github.com/user-attachments/assets/0d8e18f2-426a-47db-b88b-231f7305c09b" />
+## 🛡 Data Governance & Compliance<br>
+<img width="1837" height="723" alt="Dashboard Screenshot" src="https://github.com/user-attachments/assets/0d8e18f2-426a-47db-b88b-231f7305c09b" /><br>
 Guardrails: No medical claims; uses compliant language (e.g., "may support", "can help").
 Privacy: No personally identifiable information (PII) is intentionally collected.
 
