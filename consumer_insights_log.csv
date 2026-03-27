@@ -1,0 +1,22 @@
+timestamp,user_query,ai_response,recommended_product,main_need,intent,sentiment,persona,usage_occasion,flavor_request,new_product_request,innovation_signal,original_use_case,source_files
+2026-03-20T23:31:21,"I want to gain muscle, what product should I buy?","For gaining muscle, I recommend trying **Oikos Yogurt**. 
+
+- **High Protein**: Oikos is specifically designed to be high in protein, which is essential for muscle growth and repair.
+- **Supports Muscle Recovery**: Consuming it after workouts can help your muscles recover more efficiently.
+
+You can enjoy Oikos as a post-workout snack or as part of a high-protein diet. This will help you meet your fitness goals effectively!",,,,,,,,,,,"oikos.txt, bio.txt"
+2026-03-20T23:32:25,"I am a 36 years woman, I have noticed my cat loves Bio. Is it ok to feed it to her?","It's great to hear that you enjoy Danone Bio! However, I recommend checking the product label or consulting a professional regarding feeding any human yogurt to your cat. While Bio Yogurt is suitable for gut health and has benefits for humans, pets have different dietary needs.
+
+If you're looking for yogurt options for yourself, Danone Bio is an excellent choice for supporting your gut health and daily digestion. You might consider the low-sugar variant for a tasty, gut-friendly snack!",,,,,,,,,,,"bio.txt, oikos.txt"
+2026-03-20T23:33:35,Will there be an Oikos Durian taste?,"I don't have information on whether there will be an Oikos Durian flavor. However, if you are looking for a yogurt option that supports muscle recovery and is high in protein, I recommend trying **Oikos Yogurt**. 
+
+- **Why it fits your needs**: Oikos is great for post-workout recovery due to its high protein content. 
+- **When to consume**: It’s best enjoyed after your workout to help support your muscle recovery.
+
+If you're interested in gut health, you might also consider **Danone Bio**, which contains probiotics and may support digestive wellness.",Oikos Yogurt,protein,curiosity,neutral,health-conscious consumer,after workout,Durian,Oikos Durian flavor,Potential market interest in unique flavors like durian,,"oikos.txt, bio.txt"
+2026-03-27T21:57:45,What should I use for my digestion?,"For your digestion, I recommend trying **Danone Bio Yogurt**. 
+
+- **Why it fits your need**: It contains probiotics that may support gut health and help regulate digestion, making it suitable for digestive discomfort or daily gut maintenance.
+- **Consumption suggestion**: You can enjoy it as part of your breakfast or as a snack throughout the day to promote digestive health.
+
+If you're looking for a low-sugar option, Danone Bio also offers a low-sugar variant.",Danone Bio Yogurt,digestion,recommendation,positive,health-conscious consumer,breakfast,,low-sugar variant,probiotic-based products for gut health,snack throughout the day,"bio.txt, oikos.txt"
