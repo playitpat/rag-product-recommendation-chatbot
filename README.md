@@ -96,34 +96,30 @@ Try asking the assistant:
 >"What is the best yogurt to eat after a gym session?">
 
 ### Insights Dashboard Tab<br>
-<img width="1816" height="549" alt="Assistant Screenshot" src="https://github.com/user-attachments/assets/be03ae9f-fd0d-43c4-8d9f-fe9899794454" /><br>
+<img width="1816" height="549" alt="Assistant Screenshot" src="https://github.com/user-attachments/assets/be03ae9f-fd0d-43c4-8d9f-fe9899794454" /><br><br>
 Review aggregated metrics including:
-
 - Top consumer needs and personas.
-
 - Distribution of intent and usage occasions.
+- New flavor requests and innovation signals.
 
-New flavor requests and innovation signals.
 ---
+
 ## 🛡 Data Governance & Compliance<br>
 <img width="1837" height="723" alt="Dashboard Screenshot" src="https://github.com/user-attachments/assets/0d8e18f2-426a-47db-b88b-231f7305c09b" /><br>
-Guardrails: No medical claims; uses compliant language (e.g., "may support", "can help").
-
-Privacy: No personally identifiable information (PII) is intentionally collected.
-
-Anonymization: Conversations are stored in an anonymized, structured format.
+- Guardrails: No medical claims; uses compliant language (e.g., "may support", "can help").
+- Privacy: No personally identifiable information (PII) is intentionally collected.
+- Anonymization: Conversations are stored in an anonymized, structured format.
 
 ---
+
 ## 📈 Future Roadmap
-Channel Integration: Connection with the LINE Messaging API.
-
-Enterprise Scaling: Deployment on Databricks for robust data governance.
-
-Advanced Analytics: Integration with Power BI for real-time executive reporting.
-
-Authentication: Session tracking and user-specific rate limiting.
+- Channel Integration: Connection with the LINE Messaging API.
+- Enterprise Scaling: Deployment on Databricks for robust data governance.
+- Advanced Analytics: Integration with Power BI for real-time executive reporting.
+- Authentication: Session tracking and user-specific rate limiting.
 
 ---
+
 ## 🤝 Contact & License
 Author: Patrick
 
