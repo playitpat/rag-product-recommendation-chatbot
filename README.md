@@ -1,180 +1,132 @@
 # Danone AI Consumer Assistant (RAG + Insights)
 
-## Overview
-
-This project is a prototype of an **AI-powered consumer assistant** designed for Danone Japan.
-
-It demonstrates how conversational AI can:
-- Answer consumer questions about health and products
-- Recommend relevant Danone products
-- Collect structured consumer insights from conversations
-- Enable data-driven marketing and innovation
-
-The solution combines:
-- Retrieval-Augmented Generation (RAG)
-- Controlled prompt design (compliance + tone)
-- Conversation logging and insight extraction
-- A lightweight analytics dashboard
+A sophisticated prototype of an **AI-powered consumer assistant** tailored for Danone Japan. This project demonstrates the intersection of conversational AI, Retrieval-Augmented Generation (RAG), and real-time marketing analytics.
 
 ---
 
-## Key Features
+## 🌟 Overview
+This solution transforms standard consumer inquiries into actionable business intelligence. By leveraging RAG and structured insight extraction, it provides brand-safe interactions while feeding a live analytics dashboard.
+
+### Core Value Proposition
+* **Conversational Excellence:** Answers health and product questions with brand-compliant accuracy.
+* **Smart Recommendations:** Contextually suggests products like *Danone Bio* or *Oikos*.
+* **Insight Engine:** Automatically extracts consumer needs, intents, and innovation signals.
+* **Data-Driven Innovation:** Empowers marketing teams with a lightweight analytics dashboard.
+
+---
+
+## ✨ Key Features
 
 ### 1. AI Consumer Assistant
-- Natural language interaction
-- Product recommendation (e.g. Danone Bio, Oikos)
-- Health-oriented explanations (compliant and non-medical)
-<img width="1816" height="549" alt="image" src="https://github.com/user-attachments/assets/be03ae9f-fd0d-43c4-8d9f-fe9899794454" />
+* Natural language processing for fluid interactions.
+* Product recommendations based on user goals (e.g., protein intake, digestion).
+* **Compliance-First:** Non-medical, brand-safe tone of voice using soft claims.
+
+
 
 ### 2. RAG (Retrieval-Augmented Generation)
-- Uses curated product knowledge from local files
-- Prevents hallucination
-- Ensures brand-safe responses
+* **Knowledge Base:** Curated product data sourced from local files.
+* **Accuracy:** Dramatically reduces hallucination by grounding responses in verified text.
 
 ### 3. Insight Extraction Layer
-Each user interaction is converted into structured signals:
-- Consumer need (e.g. digestion, protein)
-- Intent (question, purchase intent, curiosity)
-- Sentiment
-- Persona
-- Usage occasion
-- Flavor requests
-- Innovation signals
-- New product requests
+Every interaction is decomposed into structured data points:
+* **Consumer Needs:** (e.g., Digestion, Muscle Recovery)
+* **Intent:** (e.g., Purchase intent, General curiosity)
+* **Context:** Sentiment, Persona, and Usage occasion.
+* **Innovation Signals:** Identifies flavor requests and unmet product needs.
 
 ### 4. Consumer Insights Dashboard
-- Visualizes trends from interactions
-- Identifies emerging needs and opportunities
-- Supports marketing and product innovation
-<img width="1837" height="723" alt="image" src="https://github.com/user-attachments/assets/0d8e18f2-426a-47db-b88b-231f7305c09b" />
+* Visualizes real-time trends from user interactions.
+* Identifies emerging needs and supports R&D/Marketing decision-making.
+
+
 
 ---
 
-## Architecture
-User → Streamlit UI → RAG (Chroma)
-↓
-OpenAI API
-↓
-Response + Insight Extraction
-↓
-CSV Log Storage
-↓
-Streamlit Dashboard
+## 🏗 Architecture
+The system follows a modular pipeline for scalability:
+
+**User** → **Streamlit UI** → **RAG (ChromaDB)** → **OpenAI API** → **Insight Extraction** → **CSV/Log Storage** → **Analytics Dashboard**
 
 ---
 
-## Project Structure
-├── app.py
-├── data/
-│ ├── bio.txt
-│ ├── oikos.txt
-│ └── ...
-├── chroma_db/
-├── consumer_insights_log.csv
-├── requirements.txt
-├── README.md
-└── .env
+## 📂 Project Structure
+```text
+├── app.py                      # Main Streamlit application
+├── data/                       # Raw product knowledge (txt files)
+│   ├── bio.txt
+│   └── oikos.txt
+├── chroma_db/                  # Vector database storage
+├── consumer_insights_log.csv   # Structured conversation logs
+├── requirements.txt            # Python dependencies
+├── .env                        # Environment variables (API Keys)
+└── README.md                   # Documentation
+```
+
 ---
-## Setup Instructions
 
-### 1. Clone the repository
+## 🚀 Setup Instructions
 
-```bash
-git clone <your-repo-url>
-cd <repo-name>
-###2. Install dependencies
-pip install -r requirements.txt
-###3. Create a .env file
+### 1. Clone the Repository
+Bash
+`git clone <your-repo-url>
+cd <repo-name>`
+### 2. Install Dependencies
+Bash
+`pip install -r requirements.txt`
+### 3. Configuration
+Create a .env file in the project root and add your credentials:
 
-Create a file named .env in the project root and add:
+`OPENAI_API_KEY=your_api_key_here`
+### 4. Populate Knowledge Base
+Add .txt files to the data/ folder. These files are indexed by the RAG layer to ensure the assistant provides accurate product information.
 
-OPENAI_API_KEY=your_api_key_here
-###4. Add product knowledge files
+### 5. Launch the Application
+Bash
+`streamlit run app.py`
 
-Add .txt files in the data/ folder.
+---
 
-Examples:
+## 🛠 Usage Guide
+### Consumer Assistant Tab
+Try asking the assistant:
 
-bio.txt
-oikos.txt
+>"I'm looking for something to help with digestive issues.">
 
-These files are used by the RAG layer to retrieve product information.
+>"What is the best yogurt to eat after a gym session?">
 
-###5. Run the app
-streamlit run app.py
-####Usage
-#####Consumer Assistant tab
+### Insights Dashboard Tab
+<img width="1816" height="549" alt="Assistant Screenshot" src="https://github.com/user-attachments/assets/be03ae9f-fd0d-43c4-8d9f-fe9899794454" />
+Review aggregated metrics including:
 
-Ask questions such as:
+- Top consumer needs and personas.
 
-I have digestive issues
-What should I eat after working out?
+- Distribution of intent and usage occasions.
 
-The assistant will:
+New flavor requests and innovation signals.
+---
+## 🛡 Data Governance & Compliance
+<img width="1837" height="723" alt="Dashboard Screenshot" src="https://github.com/user-attachments/assets/0d8e18f2-426a-47db-b88b-231f7305c09b" />
+Guardrails: No medical claims; uses compliant language (e.g., "may support", "can help").
+Privacy: No personally identifiable information (PII) is intentionally collected.
 
-retrieve relevant product data
-generate a contextual answer
-recommend suitable products when relevant
-#####Insights Dashboard tab
+Anonymization: Conversations are stored in an anonymized, structured format.
+---
+## 📈 Future Roadmap
+Channel Integration: Connection with the LINE Messaging API.
 
-The dashboard displays:
+Enterprise Scaling: Deployment on Databricks for robust data governance.
 
-top consumer needs
-intent distribution
-recommended products
-personas
-usage occasions
-flavor requests
-innovation signals
-new product requests
-####Data Governance and Compliance
+Advanced Analytics: Integration with Power BI for real-time executive reporting.
 
-This prototype includes the following guardrails:
+Authentication: Session tracking and user-specific rate limiting.
 
-no medical claims
-uses only curated product data through RAG
-uses soft, compliant language such as may support and can help
-no personally identifiable information is intentionally collected
-conversations are stored in an anonymized, structured format for insight generation
-####Cost Considerations
+---
+## 🤝 Contact & License
+Author: Patrick
 
-Typical MVP cost drivers:
+Department: Danone Japan – Digital & Strategy
 
-LLM API cost: low for a small prototype
-embeddings: negligible
-infrastructure: minimal for local or Streamlit deployment
-future production scaling cost: messaging volume and backend infrastructure
-####Future Improvements
+License: Internal / Demo Use Only
 
-Possible next steps include:
-
-integration with the LINE Messaging API
-deployment on Databricks for enterprise data governance
-vector search using enterprise infrastructure
-real-time dashboards in Power BI
-authentication and session tracking
-rate limiting and cost monitoring
-advanced persona clustering and topic analysis
-####Business Value
-
-This solution demonstrates how to:
-
-move from campaign-based marketing to continuous interaction
-generate first-party consumer insight
-improve product recommendation relevance
-support innovation through real consumer signals
-####Disclaimer
-
-This is a prototype for demonstration purposes only.
-
-It is not intended to provide medical advice.
-Product claims should be validated before production use.
-Data governance policies should be applied before any official deployment.
-####Author
-
-Patrick
-Danone Japan – Digital & Strategy
-
-####License
-
-Internal / Demo Use
+Disclaimer: This is a prototype for demonstration purposes. It is not intended to provide medical advice. Product claims should be validated by regulatory teams before production use.
